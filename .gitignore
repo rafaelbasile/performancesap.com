@@ -101,5 +101,5 @@ ENV/
 .mypy_cache/
 
 #staticfiles
-staticfiles/
+staticsfiles/
 db.sqlite3
