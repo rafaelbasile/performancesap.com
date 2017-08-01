@@ -13,13 +13,13 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
+from django.conf.urls import url
 from django.contrib import admin
-
+from .views import initial, post_create, post_detail, ContactView
 
 urlpatterns = [
-    url(r'^django/admin/', admin.site.urls),
-    url(r'^', include('performancesap.core.urls')),
-    url(r'^website/', include('performancesap.website.urls')),
+    url(r'^contactus/(?P<id>\d+)/$', ContactView.as_view()),
+    url(r'^$', initial),
+    url(r'^detail/(?P<id>\d+)/$', post_detail),
 ]
-	
+
