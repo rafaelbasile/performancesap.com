@@ -103,3 +103,5 @@ ENV/
 #staticfiles
 staticsfiles/
 db.sqlite3
+*.py
+*.py
