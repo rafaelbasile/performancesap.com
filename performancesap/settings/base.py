@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # # # #
     'performancesap.core',
-    'performancesap.website',
     'bootstrap3'
 ]
 

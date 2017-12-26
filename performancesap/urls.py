@@ -20,6 +20,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^django/admin/', admin.site.urls),
     url(r'^', include('performancesap.core.urls')),
-    url(r'^website/', include('performancesap.website.urls')),
 ]
 	
